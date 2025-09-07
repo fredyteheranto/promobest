@@ -3,30 +3,292 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Redirigiendo...</title>
-  <!-- Redirige después de 3 segundos 
-  <meta http-equiv="refresh" content="3;url=https://ejemplo.com">-->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17537571654"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'AW-17537571654');
-  </script>
-  <!-- Event snippet for Vista de una página (2) conversion page -->
-  <script>
-    gtag('event', 'conversion', {
-      'send_to': 'AW-17537571654/nTmBCNWc0pUbEMa2yKpB',
-      'value': 1.0,
-      'currency': 'COP'
-    });
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#c5122f" />
+  <title>Promociones de Vuelos Baratos | Reserva Fácil y Seguro</title>
+  <meta name="description"
+    content="Encuentra promociones de vuelos nacionales e internacionales. Reserva rápido, seguro y con descuentos exclusivos. ¡Viaja pagando menos hoy!">
+  <meta name="keywords"
+    content="vuelos baratos, promociones de vuelos, tiquetes aéreos económicos, pasajes de avión baratos, ofertas de vuelos, vuelos nacionales baratos, vuelos internacionales económicos, vuelos low cost, tiquetes baratos Colombia, reserva vuelos online">
+  <meta name="robots" content="index, follow">
+  <!-- Redirige después de 3 segundos -->
+  <meta http-equiv="refresh" content="3;url=https://55www.enjoy-travelingbestprice.ch/promoflash">-->
+
+  <!-- Google tag (gtag.js) -->
+  <style>
+    :root {
+
+      --bg-url: url('/static/images/avion-rojo-pista.png');
+
+
+      --gobling-red: #c5122f;
+      --gobling-dark: #8c0f23;
+      --ink: #f8fafc;
+      /* texto claro */
+      --ink-soft: #e5e7eb;
+      /* texto suave */
+      --line: rgba(255, 255, 255, .16);
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, Roboto, Arial;
+      color: var(--ink);
+      background: #000;
+      display: grid;
+      place-items: center;
+    }
+
+    /* Fondo */
+    .backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background-image: var(--bg-url);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: saturate(108%) contrast(104%);
+    }
+
+    .veil {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(120% 90% at 20% 10%, rgba(0, 0, 0, .35), transparent 60%),
+        linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6));
+    }
+
+    /* Layout */
+    .hud {
+      width: min(960px, 100%);
+      padding: clamp(16px, 4vw, 28px);
+      display: grid;
+      gap: 16px;
+      justify-items: center;
+      text-align: center;
+    }
+
+    .badge-co {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, .45);
+      border: 1px solid var(--line);
+      font-weight: 800;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+      font-size: 12px;
+      backdrop-filter: blur(6px);
+    }
+
+    .flag {
+      width: 18px;
+      height: 12px;
+      border-radius: 2px;
+      border: 1px solid rgba(255, 255, 255, .5);
+      background: linear-gradient(#ffd100 0 33%, #003087 33% 66%, #ce1126 66% 100%);
+    }
+
+    .title {
+      margin: 6px 0 0;
+      font-weight: 900;
+      line-height: 1.05;
+      font-size: clamp(28px, 6vw, 56px);
+      text-wrap: balance
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: clamp(14px, 3vw, 18px)
+    }
+
+    /* Botón rojizo */
+    .cta {
+      margin-top: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 18px;
+      border-radius: 14px;
+      background: var(--gobling-red);
+      border: 1px solid var(--gobling-dark);
+      color: #fff;
+      font-weight: 900;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .25);
+      transition: transform .06s ease, filter .15s ease, background .15s ease;
+    }
+
+    .cta:hover {
+      filter: saturate(110%);
+      background: color-mix(in oklab, var(--gobling-red) 86%, white 14%);
+    }
+
+    .cta:active {
+      transform: translateY(1px)
+    }
+
+    .cta[disabled] {
+      opacity: .7;
+      cursor: not-allowed;
+      filter: grayscale(.1) brightness(.9)
+    }
+
+    .legal {
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--ink-soft);
+      opacity: .9
+    }
+
+    /* Franja fija inferior */
+    .ribbon-bottom {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding: 10px 12px;
+    }
+
+    .ribbon-bottom .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, .55);
+      border: 1px solid var(--line);
+      font-weight: 800;
+      letter-spacing: .2px;
+    }
+
+    @media (max-width:420px) {
+      .subtitle {
+        display: none
+      }
+    }
+  </style>
 
 </head>
 
 <body>
-  <p>Serás redirigido en unos segundos... Si no, haz clic <a href="https://ejemplo.com">aquí</a>.</p>
-</body>
+  <!-- Fondo -->
+  <div class="backdrop" aria-hidden="true"></div>
+  <div class="veil" aria-hidden="true"></div>
+
+  <!-- Contenido -->
+  <main class="hud" role="main" aria-labelledby="tit">
+    <div class="badge-co" aria-label="Ámbito de la oferta">
+      <span class="flag" aria-hidden="true"></span>
+      <span>Válido solo en Colombia</span>
+    </div>
+
+    <h1 id="tit" class="title">Ofertas aéreas</h1>
+    <p class="subtitle" id="sub">Precios por tiempo limitado</p>
+
+    <button type="button" id="cta" class="cta" aria-live="polite" aria-describedby="sub">
+      Continuar
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M13 5l7 7-7 7v-4H4v-6h9V5z" />
+      </svg>
+    </button>
+
+    <p class="legal">Cupos sujetos a disponibilidad. Pueden aplicar condiciones comerciales.</p>
+  </main>
+
+  <!-- Franja fija -->
+  <div class="ribbon-bottom" role="contentinfo">
+    <div class="chip"><span class="flag" aria-hidden="true"></span> Solo Colombia</div>
+  </div>
+
+  <script>
+    // Refactor: módulo pequeño, manejo de estado, timeout y accesibilidad
+    (function () {
+      /** Convención de ruta (igual que el original) */
+      const rutaApi = ("/tpY0KZkE").replace(/^\/+/, "");
+      const cta = document.getElementById("cta");
+
+      const TEXT = {
+        idle: "Continuar",
+        busy: "Conectando…",
+        fail: "No fue posible continuar.",
+        net: "No pudimos conectarnos. Intenta de nuevo."
+      };
+
+      /** Cambia estado del botón y a11y */
+      function setLoading(on) {
+        if (on) {
+          cta.dataset.prev = cta.textContent;
+          cta.textContent = TEXT.busy;
+          cta.setAttribute("disabled", "true");
+          cta.setAttribute("aria-busy", "true");
+        } else {
+          cta.textContent = cta.dataset.prev || TEXT.idle;
+          cta.removeAttribute("disabled");
+          cta.removeAttribute("aria-busy");
+        }
+      }
+
+      /** fetch con timeout y abort */
+      async function postWithTimeout(url, ms = 10000) {
+        const ctrl = new AbortController();
+        const t = setTimeout(() => ctrl.abort(), ms);
+        try {
+          const res = await fetch(url, {
+            method: "POST",
+            credentials: "include",
+            headers: { "Content-Type": "application/json" },
+            signal: ctrl.signal
+          });
+          return res;
+        } finally {
+          clearTimeout(t);
+        }
+      }
+
+      async function proceder() {
+        setLoading(true);
+        try {
+          const res = await postWithTimeout("/" + rutaApi);
+          let payload = {};
+          try { payload = await res.json(); } catch { /* noop */ }
+
+          if (payload && payload.redirect_to) {
+            window.location.assign(payload.redirect_to);
+            return;
+          }
+          alert(TEXT.fail);
+        } catch (err) {
+          console.error(err);
+          alert(TEXT.net);
+        } finally {
+          // Si no hubo redirect seguimos aquí, desbloqueamos
+          setLoading(false);
+        }
+      }
+
+      cta.addEventListener("click", proceder, { passive: true });
+    })();
+  </script>
 
 </html>
